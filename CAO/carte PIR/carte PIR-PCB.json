@@ -1,0 +1,581 @@
+{
+ "format": "pcbedit-1",
+ "cu": 2,
+ "cuL": [
+  {
+   "name": "Top",
+   "custom": false,
+   "color": "#e8443a",
+   "vis": true,
+   "plane": false,
+   "net": "GND",
+   "role": "signal"
+  },
+  {
+   "name": "Bottom",
+   "custom": false,
+   "color": "#3fa0ea",
+   "vis": true,
+   "plane": false,
+   "net": "GND",
+   "role": "signal"
+  }
+ ],
+ "stack": {
+  "target": 1.6,
+  "finish": "ENIG (or chimique)",
+  "maskT": 0.025,
+  "maskEr": 3.8,
+  "maskColor": "vert",
+  "silkColor": "blanc",
+  "cu": [
+   {
+    "t": 0.035
+   },
+   {
+    "t": 0.035
+   }
+  ],
+  "di": [
+   {
+    "k": "core",
+    "t": 1.48,
+    "er": 4.5,
+    "df": 0.02,
+    "mat": "FR-4"
+   }
+  ]
+ },
+ "show": {
+  "silkT": true,
+  "silkB": true,
+  "edge": true,
+  "rats": true,
+  "plane": true,
+  "drc": true,
+  "maskT": false,
+  "maskB": false,
+  "pasteT": false,
+  "pasteB": false
+ },
+ "board": {
+  "x": 0,
+  "y": 0,
+  "w": 100,
+  "h": 80,
+  "pts": null
+ },
+ "rule": {
+  "edge": 0.4,
+  "thermal": 0.5,
+  "mask": 0.05,
+  "paste": 0,
+  "viaFinish": "tented",
+  "corner": "45",
+  "route": "shove",
+  "hole": 0.25,
+  "mat": {},
+  "short": false,
+  "aspWarn": 8,
+  "aspMax": 10
+ },
+ "classes": [
+  {
+   "name": "Défaut",
+   "w": 0.3,
+   "clr": 0.25,
+   "via": 0.8,
+   "drill": 0.4
+  },
+  {
+   "name": "Alimentation",
+   "w": 0.6,
+   "clr": 0.25,
+   "via": 0.9,
+   "drill": 0.45
+  }
+ ],
+ "netClass": {
+  "GND": "Alimentation"
+ },
+ "dpPairs": [],
+ "dpRules": [],
+ "origin": {
+  "x": 0,
+  "y": 0
+ },
+ "fabOrigin": false,
+ "fps": [
+  {
+   "id": 1,
+   "ref": "C1",
+   "value": "100n",
+   "pkg": "0603",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.5,
+   "span": 1.5,
+   "x": 107.4,
+   "y": 0.8,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$3",
+    "2": "GND"
+   }
+  },
+  {
+   "id": 2,
+   "ref": "C2",
+   "value": "100n",
+   "pkg": "0603",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.5,
+   "span": 1.5,
+   "x": 107.4,
+   "y": 4.4,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$2",
+    "2": "GND"
+   }
+  },
+  {
+   "id": 3,
+   "ref": "D1",
+   "value": "LED",
+   "pkg": "0805",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.9,
+   "span": 1.9,
+   "x": 107.7,
+   "y": 8.2,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$6",
+    "2": "3,3V"
+   }
+  },
+  {
+   "id": 4,
+   "ref": "D2",
+   "value": "LED",
+   "pkg": "0805",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.9,
+   "span": 1.9,
+   "x": 107.7,
+   "y": 12.1,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$7",
+    "2": "GND"
+   }
+  },
+  {
+   "id": 5,
+   "ref": "R1",
+   "value": "10k",
+   "pkg": "0603",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.5,
+   "span": 1.5,
+   "x": 107.4,
+   "y": 15.8,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "3,3V",
+    "2": "LIEN"
+   }
+  },
+  {
+   "id": 6,
+   "ref": "R2",
+   "value": "10k",
+   "pkg": "0603",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.5,
+   "span": 1.5,
+   "x": 107.4,
+   "y": 19.5,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "LIEN",
+    "2": "N$3"
+   }
+  },
+  {
+   "id": 7,
+   "ref": "R3",
+   "value": "10k",
+   "pkg": "0603",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.5,
+   "span": 1.5,
+   "x": 107.4,
+   "y": 23.1,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$5",
+    "2": "N$6"
+   }
+  },
+  {
+   "id": 8,
+   "ref": "R4",
+   "value": "10k",
+   "pkg": "0603",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.5,
+   "span": 1.5,
+   "x": 107.4,
+   "y": 26.7,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$5",
+    "2": "N$7"
+   }
+  },
+  {
+   "id": 9,
+   "ref": "R5",
+   "value": "0R0",
+   "pkg": "0402R",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 108.1,
+   "y": 30.6,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "PIR2",
+    "2": "N$1"
+   }
+  },
+  {
+   "id": 10,
+   "ref": "R6",
+   "value": "0R0",
+   "pkg": "0402R",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 108.1,
+   "y": 34.8,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "PIR1",
+    "2": "N$1"
+   }
+  },
+  {
+   "id": 11,
+   "ref": "R7",
+   "value": "0R0",
+   "pkg": "0402R",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 108.1,
+   "y": 39,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$4",
+    "2": "PIR1"
+   }
+  },
+  {
+   "id": 12,
+   "ref": "R8",
+   "value": "0R0",
+   "pkg": "0402R",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 108.1,
+   "y": 43.2,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$4",
+    "2": "PIR2"
+   }
+  },
+  {
+   "id": 13,
+   "ref": "R9",
+   "value": "10k",
+   "pkg": "0603",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.5,
+   "span": 1.5,
+   "x": 107.4,
+   "y": 47.1,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "EN_P",
+    "2": "A"
+   }
+  },
+  {
+   "id": 14,
+   "ref": "R10",
+   "value": "10k",
+   "pkg": "0603",
+   "pins": 2,
+   "style": "chip",
+   "pitch": 1.5,
+   "span": 1.5,
+   "x": 107.4,
+   "y": 50.7,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "EN_N",
+    "2": "B"
+   }
+  },
+  {
+   "id": 15,
+   "ref": "TP1",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 11.5,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "3,3V"
+   }
+  },
+  {
+   "id": 16,
+   "ref": "TP2",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 15.7,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "3,3V"
+   }
+  },
+  {
+   "id": 17,
+   "ref": "TP3",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 19.9,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "3,3V"
+   }
+  },
+  {
+   "id": 18,
+   "ref": "TP4",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 24.1,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "GND"
+   }
+  },
+  {
+   "id": 19,
+   "ref": "TP5",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 28.3,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "GND"
+   }
+  },
+  {
+   "id": 20,
+   "ref": "TP6",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 32.5,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "GND"
+   }
+  },
+  {
+   "id": 21,
+   "ref": "TP7",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 36.7,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "PIR1"
+   }
+  },
+  {
+   "id": 22,
+   "ref": "TP8",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 40.9,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "PIR2"
+   }
+  },
+  {
+   "id": 23,
+   "ref": "TP9",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 45,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "PIR1"
+   }
+  },
+  {
+   "id": 24,
+   "ref": "TP10",
+   "value": "TP",
+   "pkg": "",
+   "pins": 1,
+   "style": "chip",
+   "pitch": 2.4,
+   "span": 2.4,
+   "x": 82.9,
+   "y": 49.2,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "PIR2"
+   }
+  },
+  {
+   "id": 25,
+   "ref": "U1",
+   "value": "NE555",
+   "pkg": "SOIC-8",
+   "pins": 8,
+   "style": "sop",
+   "pitch": 1.27,
+   "span": 5.4,
+   "x": 85.5,
+   "y": 55,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "GND",
+    "2": "N$3",
+    "3": "N$5",
+    "4": "N$1",
+    "5": "N$2",
+    "6": "THR_TR",
+    "7": "LIEN",
+    "8": "3,3V"
+   }
+  },
+  {
+   "id": 26,
+   "ref": "U2",
+   "value": "IRA-S400st01A01",
+   "pkg": "TO-5",
+   "pins": 3,
+   "style": "row",
+   "pitch": 2.54,
+   "span": 2.54,
+   "x": 85.7,
+   "y": 61,
+   "rot": 0,
+   "side": 0,
+   "nets": {
+    "1": "N$4",
+    "2": "3,3V",
+    "3": "GND"
+   }
+  }
+ ],
+ "tracks": [],
+ "vias": [],
+ "zones": [],
+ "cuts": [],
+ "active": 0,
+ "nextId": 27
+}

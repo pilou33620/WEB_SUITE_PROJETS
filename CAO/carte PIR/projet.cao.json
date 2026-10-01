@@ -1,0 +1,13 @@
+{
+ "format": "cao-projet-1",
+ "nom": "carte PIR",
+ "revision": "A",
+ "auteur": "",
+ "cree": "2026-08-26T08:14:26.784Z",
+ "modifie": "2026-08-26T08:14:26.784Z",
+ "fichiers": {
+  "schema": "carte PIR-SCH.json",
+  "pcb": "carte PIR-PCB.json"
+ },
+ "notes": ""
+}
