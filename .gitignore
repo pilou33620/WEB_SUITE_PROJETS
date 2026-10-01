@@ -1,5 +1,1 @@
 ANTENNA/*/calculs/
-# Anciennes jonctions Windows de la LIB, cassées (elles visaient IA\WEB_CAO\lib)
-LIB_CAO/empreinte
-LIB_CAO/simulation
-LIB_CAO/symbole
